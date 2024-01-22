@@ -2,19 +2,19 @@
 chcp 65001 >nul
 setlocal enabledelayedexpansion
 
+REM Автоматический скрипт, для инициализации репозитория
+REM и отправки коммитов в ветку main.
+REM 
+REM v7
+REM 
+REM Добавьте этот скрипт в папку вашего проекта,
+REM и он всё сделает за вас
+
 if not exist .git (
     echo Инициализируем новый репозиторий
 
 REM Ожидание 3 секунд
 timeout /t 3 >nul
-
-echo Автоматический скрипт, для инициализации репозитория > "git_init 7.txt"
-echo и отправки коммитов в ветку main. >> "git_init 7.txt"
-echo. >> "git_init 7.txt"
-echo v7 >> "git_init 7.txt"
-echo. >> "git_init 7.txt"
-echo Добавьте этот скрипт в папку вашего проекта, >> "git_init 7.txt"
-echo и он всё сделает за вас >> "git_init 7.txt"
 
 echo Инициализация репозитория git
 echo git init
