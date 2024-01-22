@@ -8,6 +8,14 @@ if not exist .git (
 REM Ожидание 3 секунд
 timeout /t 3 >nul
 
+echo Автоматический скрипт, для инициализации репозитория > "git_init 7.txt"
+echo и отправки коммитов в ветку main. >> "git_init 7.txt"
+echo. >> "git_init 7.txt"
+echo v7 >> "git_init 7.txt"
+echo. >> "git_init 7.txt"
+echo Добавьте этот скрипт в папку вашего проекта, >> "git_init 7.txt"
+echo и он всё сделает за вас >> "git_init 7.txt"
+
 echo Инициализация репозитория git
 echo git init
 echo.
@@ -46,14 +54,6 @@ echo git push -u origin main
 echo.
 REM Отправка коммитов в удаленный репозиторий
 git push -u origin main
-
-echo Автоматический скрипт, для инициализации репозитория > "git_init 7.txt"
-echo и отправки коммитов в ветку main. >> "git_init 7.txt"
-echo. >> "git_init 7.txt"
-echo v7 >> "git_init 7.txt"
-echo. >> "git_init 7.txt"
-echo Добавьте этот скрипт в папку вашего проекта, >> "git_init 7.txt"
-echo и он всё сделает за вас >> "git_init 7.txt"
 
 
 echo.
